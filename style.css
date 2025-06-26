@@ -206,13 +206,15 @@ footer {
 }
 
 .ferramenta-botao {
+  display: inline-block;
   padding: 10px 20px;
-  background-color: #a67fcf; /* Roxo mais claro */
+  background-color: #a67fcf;
   color: white;
   border-radius: 30px;
   font-weight: 500;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  cursor: default;
 }
 
 .ferramenta-botao:hover {
