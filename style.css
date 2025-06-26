@@ -9,7 +9,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-  margin: 20px auto 50px;
+  margin: 0 auto 50px;
   border-radius: 2rem;
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
