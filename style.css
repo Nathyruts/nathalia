@@ -1,0 +1,54 @@
+body {
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #bedbf8 0%, #e0c5ff 100%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ... Demais estilos como .navbar, .perfil-container, .glass-card etc ... */
+/* Inclua também os estilos abaixo para o pop-up */
+
+.idioma-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.idioma-popup-content {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.idioma-popup h2 {
+  color: #6a0dad;
+  margin-bottom: 20px;
+}
+
+.idioma-botoes button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  margin: 0 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.idioma-botoes button:hover {
+  background-color: #4e088c;
+}
