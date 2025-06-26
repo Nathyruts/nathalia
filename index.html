@@ -1,100 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nathalia Carvalho</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathalia Carvalho</title>
 
-  <!-- Fontes e bibliotecas -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- CSS externo -->
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* O CSS está na próxima seção */
+  </style>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg w-100 px-4">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">Nathalia Carvalho</a>
+    <div class="d-flex align-items-center ms-auto">
+      <ul class="navbar-nav d-flex flex-row align-items-center gap-3 me-3">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/nathaliafcarvalho/" target="_blank">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="curriculo.pdf" target="_blank">Currículo</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search" />
+        <button class="btn btn-roxo" type="submit">Buscar</button>
+      </form>
+    </div>
+    </div>
+</nav>
 
-  <!-- Pop-up de seleção de idioma -->
-  <div id="idioma-popup" class="idioma-popup">
-    <div class="idioma-popup-content">
-      <h2>Escolha seu idioma / Choose your language</h2>
-      <div class="idioma-botoes">
-        <button onclick="selecionarIdioma('pt')">Português</button>
-        <button onclick="selecionarIdioma('en')">English</button>
-      </div>
-    </div>
-  </div>
+    <div class="perfil-container">
+    <img src="perfil3.jpg" alt="Nathalia Carvalho" class="foto-perfil" style="image-rendering: auto; margin-left: 80px;" />
+    <div class="perfil-texto">
+      <h2>Olá, sou <strong>Nathalia Carvalho</strong></h2>
+      <h4 class="subtitulo">UX/UI Designer</h4>
+      <p class="descricao">
+        Apaixonada por criar interfaces bonitas, funcionais e com usabilidade.
+      </p>
+    </div>
+  </div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg w-100 px-4">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">Nathalia Carvalho</a>
-      <div class="d-flex align-items-center ms-auto">
-        <ul class="navbar-nav d-flex flex-row align-items-center gap-3 me-3">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/nathaliafcarvalho/" target="_blank">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="curriculo.pdf" target="_blank">Currículo</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search" />
-          <button class="btn btn-roxo" type="submit">Buscar</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+  <section class="section" id="projetos">
+    <div class="margem-esquerda margem-direita">
+    <h4 class="fw-bold my-4" style="color:#6a0dad; margin: 80px;">Meus Projetos</h4>
 
-  <!-- PERFIL -->
-  <div class="perfil-container">
-    <img src="perfil3.jpg" alt="Nathalia Carvalho" class="foto-perfil" />
-    <div class="perfil-texto">
-      <h2 data-i18n="titulo">Olá, sou Nathalia</h2>
-      <h4 class="subtitulo">UX/UI Designer</h4>
-      <p class="descricao" data-i18n="descricao">Apaixonada por criar interfaces bonitas, funcionais e com usabilidade.</p>
-    </div>
-  </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+        <div class="card h-100 glass-card margem-esquerda">
+            <img src="CA5.png" class="card-img-top" alt="cartas-de-amor">
+            <div class="card-body">
+            <h5 class="card-title">Cartas de Amor</h5>
+            <p class="card-text">Estudo de caso: site responsivo de papelaria de casamentos</p>
+            </div>
+        </div>
+        </div>
 
-  <!-- PROJETOS -->
-  <section class="section" id="projetos">
-    <div class="margem-esquerda margem-direita">
-      <h4 class="fw-bold my-4" style="color:#6a0dad;" data-i18n="meusProjetos">Meus Projetos</h4>
 
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <!-- Projeto 1 -->
-        <div class="col">
-          <div class="card h-100 glass-card margem-esquerda">
-            <img src="CA5.png" class="card-img-top" alt="cartas-de-amor" />
-            <div class="card-body">
-              <h5 class="card-title">Cartas de Amor</h5>
-              <p class="card-text" data-i18n="descricaoProjeto1">Estudo de caso: site responsivo de papelaria de casamentos</p>
-            </div>
-          </div>
-        </div>
+    <div class="col">
+      <div class="card h-100 glass-card margem-direita">
+        <img src="remedcy.png" class="card-img-top" alt="remedcy">
+        <div class="card-body">
+          <h5 class="card-title">Remedcy</h5>
+          <p class="card-text">Estudo de caso: app e site de cadastro e consulta de medicamentos</p>
+        </div>
+      </div>
+    </div>
 
-        <!-- Projeto 2 -->
-        <div class="col">
-          <div class="card h-100 glass-card margem-direita">
-            <img src="remedcy.png" class="card-img-top" alt="remedcy" />
-            <div class="card-body">
-              <h5 class="card-title">Remedcy</h5>
-              <p class="card-text" data-i18n="descricaoProjeto2">Estudo de caso: app e site de cadastro e consulta de medicamentos</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="col">
+      <div class="card h-100 glass-card margem-esquerda">
+        <img src="IDN1.png" class="card-img-top" alt="idn-news">
+        <div class="card-body">
+          <h5 class="card-title">IDN News</h5>
+          <p class="card-text">Estudo de caso: site de reviews e ranking de jogos em português</p>
+        </div>
+      </div>
+    </div>
 
-  <!-- RODAPÉ -->
-  <footer data-i18n="rodape">Desenvolvido por Nathalia Carvalho 💜</footer>
+    <div class="col">
+      <div class="card h-100 glass-card margem-direita">
+        <img src="CCC.png" class="card-img-top" alt="cocriarse-carreiras">
+        <div class="card-body">
+          <h5 class="card-title">CocriarSe Carreiras</h5>
+          <p class="card-text">Redesign da página principal do site</p>
+        </div>
+      </div>
+    </div>
+</div> </section>
 
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <section class="section" id="quem-sou-eu">
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="perfil2.jpg" alt="Foto de Nathalia" class="img-fluid rounded-4 shadow">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold" style="color:#6a0dad;">Quem sou eu?</h2>
+        <p style="color:#444;">
+          Olá! Eu sou a Nathalia Carvalho, UX/UI Designer apaixonada por criar experiências digitais que encantam e facilitam a vida das pessoas.
+        </p>
+        <p style="color:#444;">
+          Desde 2020, venho explorando o universo do design centrado no usuário através de projetos acadêmicos, voluntariados e mentorias. Me inspiro em boas histórias, boas interfaces e na curiosidade constante por aprender.
+        </p>
+        <p style="color:#444;">
+          Fora das telas, adoro livros, música, cafés e boas conversas. Estou sempre em busca de desafios que me ajudem a crescer como pessoa e como profissional.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section" id="ferramentas">
+    <div class="container text-center mb-5">
+    <h2 class="fw-bold mb-4" style="color:#6a0dad;">Ferramentas que utilizo</h2>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+        <span class="ferramenta-botao">Figma</span>
+        <span class="ferramenta-botao">Trello</span>
+        <span class="ferramenta-botao">Notion</span>
+        <span class="ferramenta-botao">Jira</span>
+        <span class="ferramenta-botao">Confluence</span>
+        <span class="ferramenta-botao">Miro</span>
+        <span class="ferramenta-botao">HTML & CSS</span>
+        <span class="ferramenta-botao">Canva</span>
+        <span class="ferramenta-botao">Wordpress</span>
+    </div>
+    </div>
+</section>
+
+  <section class="section" id="ferramentas">
+    <section class="text-center my-5">
+    <h2 class="fw-bold mb-4" style="color:#6a0dad;">Vamos conversar?</h2>
+    <p class="mb-4" style="color: #444;">Fique à vontade para me chamar, vou adorar conversar sobre UX, design ou café ☕</p>
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <a href="https://www.linkedin.com/in/nathaliafcarvalho/" target="_blank" class="contato-botao">
+        <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:nathaliacarvalho151@gmail.com" class="contato-botao">
+        <i class="fas fa-envelope"></i> E-mail
+        </a>
+        <a href="https://wa.me/5541997218786" target="_blank" class="contato-botao">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+    </section>
+</section>
+    <footer>
+    Desenvolvido por Nathalia Carvalho 💜
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
